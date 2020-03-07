@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#container:after {
+  content: "";
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+#container,
+#glass {
+  background: url("BrAaxz.jpg") center no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: background-size 300ms, width 302ms, height 700ms;
+}
+#glass {
+  z-index: 11;
+  width: 301px;
+  height: 301px;
+  border: none;
+  border-radius: 200px;
+  box-shadow: inset 0px 0px 30px 21px rgba(0, 0, 0, 0.2),
+    0px 0px 12px 0px rgba(0, 0, 0, 0.4);
+  margin: -152px;
+  border: 8px solid #f90606;
+  background-size: 1200px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+#glass:active {
+  background-size: 1500px;
+}
